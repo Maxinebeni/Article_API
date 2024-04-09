@@ -11,6 +11,11 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 from flask_cors import CORS # Import CORS from flask_cors module
 
 
+import nltk
+nltk.download('punkt')
+
+
+
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes of the app
 
